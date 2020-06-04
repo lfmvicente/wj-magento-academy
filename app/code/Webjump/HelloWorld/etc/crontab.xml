@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<config>
+    <group id="default">
+        <job name="writeMessage" instance="Webjump\HelloWorld\Cron\WriteMessage" method="execute">
+            <schedule>* * * * *</schedule>
+        </job>
+    </group>
+</config>
