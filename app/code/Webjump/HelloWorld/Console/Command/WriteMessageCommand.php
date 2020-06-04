@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Webjump\HelloWorld\Console\Command;
 
+use Magento\Framework\Event\ManagerInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
