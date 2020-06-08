@@ -21,13 +21,21 @@ class ActionPlugin
 
     public function beforeDispatch()
     {
-        $this->logger->info('Method before works!!!!!!');
-        //$this->eventManager->dispatch('controller_action_predispatch');
+        $this->logger->critical('Method before works!!!!!!');
     }
+
+    public function aroundDispatch(Action $action, callable $proceed, $request)
+    {
+        $this->logger->debug('Method around works!!!!!');
+        $result = $proceed($request);
+        $this->logger->debug('Method around after proceed');
+        return $result;
+    }
+
     public function afterDispatch(Action $action, $request)
     {
-        $this->logger->info('Method After works!!!!!!');
-        $this->eventManager->dispatch('controller_action_predispatch');
+        $this->logger->debug('Method After works!!!!!!');
+
         return $request;
     }
 }
