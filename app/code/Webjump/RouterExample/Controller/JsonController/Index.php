@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Webjump\RouterExample\Controller\RouterController;
+namespace Webjump\RouterExample\Controller\JsonController;
 
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
@@ -20,6 +20,12 @@ class Index extends Action
 
     public function execute()
     {
-        echo "This route works";
+        //die("aqui");
+        $resultJson = $this->resultJsonFactory->create();
+
+        $response = ['success' => 'true'];
+        $resultJson->setData($response);
+
+        return $resultJson;
     }
 }

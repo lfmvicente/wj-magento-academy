@@ -245,6 +245,7 @@ return [
         'Temando_ShippingRemover' => 1,
         'Vertex_Tax' => 1,
         'Vertex_AddressValidation' => 1,
+        'Webjump_Endpoint' => 1,
         'Webjump_HelloWorld' => 1,
         'Webjump_RouterExample' => 1,
         'Yotpo_Yotpo' => 1
