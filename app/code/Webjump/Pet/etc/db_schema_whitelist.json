@@ -1,0 +1,24 @@
+{
+    "pet_table": {
+        "column": {
+            "entity_id": true,
+            "pet_name": true,
+            "pet_owner": true,
+            "created_at": true,
+            "owner_telephone": true,
+            "owner_id": true
+        },
+        "index": {
+            "PET_TABLE_ENTITY_ID": true,
+            "PET_TABLE_PET_NAME": true,
+            "PET_TABLE_PET_OWNER": true,
+            "PET_TABLE_CREATED_AT": true,
+            "PET_TABLE_OWNER_TELEPHONE": true,
+            "PET_TABLE_OWNER_ID": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "PET_TABLE_OWNER_ID_CUSTOMER_ENTITY_ENTITY_ID": true
+        }
+    }
+}
