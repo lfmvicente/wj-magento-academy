@@ -20,7 +20,6 @@ class Index extends Action
 
     public function execute()
     {
-        //die("aqui");
         $resultJson = $this->resultJsonFactory->create();
 
         $response = ['success' => 'true'];

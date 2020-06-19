@@ -14,7 +14,7 @@ interface PetInterface
      *
      * @return int|null
      */
-    public function getId();
+    public function getPetId();
 
     /**
      * Set entity id
@@ -23,7 +23,7 @@ interface PetInterface
      *
      * @return $this
      */
-    public function setId(int $id);
+    public function setPetId(int $id);
 
     /**
      * Get pet name

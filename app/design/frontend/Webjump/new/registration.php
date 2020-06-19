@@ -6,4 +6,8 @@
 
 use \Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::THEME, 'frontend/webjump/new', __DIR__);
+ComponentRegistrar::register(
+    ComponentRegistrar::THEME,
+    'frontend/webjump/new',
+    __DIR__
+);

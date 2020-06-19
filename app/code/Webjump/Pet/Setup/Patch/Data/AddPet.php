@@ -5,14 +5,12 @@ declare(strict_types=1);
 namespace Webjump\Pet\Setup\Patch\Data;
 
 use Magento\Framework\Setup\Patch\DataPatchInterface;
-use Magento\Framework\Setup\Patch\PatchInterface;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
 
 class AddPet implements DataPatchInterface
 {
 
     private $moduleDataSetup;
-    private $petSetupFactory;
 
     public function __construct(ModuleDataSetupInterface $moduleDataSetup)
     {

@@ -5,68 +5,78 @@ declare(strict_types=1);
 namespace Webjump\Pet\Model;
 
 use Webjump\Pet\Api\Data\PetInterface;
-use Webjump\Pet\Api\PetRepositoryInterface;
 
-class Pet implements PetInterface
+class Pet extends \Magento\Framework\Model\AbstractModel implements PetInterface
 {
+    private $id;
+    private $name;
+    private $owner;
+    private $createdAt;
+    private $ownerTelephone;
+    private $ownerId;
 
-    public function getId()
+    protected function _construct()
     {
-        // TODO: Implement getId() method.
+        $this->_init('Webjump\Pet\Model\ResourceModel\PetResource');
     }
 
-    public function setId(int $id)
+    public function getPetId()
     {
-        // TODO: Implement setId() method.
+        return $this->id;
+    }
+
+    public function setPetId(int $id)
+    {
+        $this->id = $id;
     }
 
     public function getName()
     {
-        // TODO: Implement getName() method.
+        return $this->name;
     }
 
     public function setName(string $petName)
     {
-        // TODO: Implement setName() method.
+        $this->name = $petName;
     }
 
     public function getOwner()
     {
-        // TODO: Implement getOwner() method.
+        return $this->owner;
     }
 
     public function setOwner(string $petOwner)
     {
-        // TODO: Implement setOwner() method.
+        $this->owner = $petOwner;
     }
 
     public function getCreatedAt()
     {
-        // TODO: Implement getCreatedAt() method.
+        return $this->createdAt;
     }
 
     public function setCreatedAt()
     {
-        // TODO: Implement setCreatedAt() method.
+        $this->createdAt = date('Y/m/d H:i:s');
     }
 
     public function getOwnerTelephone()
     {
-        // TODO: Implement getOwnerTelephone() method.
+        return $this->ownerTelephone;
     }
 
     public function setOwnerTelephone(string $telephone)
     {
-        // TODO: Implement setOwnerTelephone() method.
+        $this->ownerTelephone = $telephone;
     }
 
     public function getOwnerId()
     {
-        // TODO: Implement getOwnerId() method.
+        return $this->ownerId;
     }
 
     public function setOwnerId(int $ownerId)
     {
-        // TODO: Implement setOwnerId() method.
+        $this->ownerId = $ownerId;
     }
 }

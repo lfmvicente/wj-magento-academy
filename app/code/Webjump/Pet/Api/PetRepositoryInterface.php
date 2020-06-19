@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Webjump\Pet\Api;
 
-use Webjump\Pet\Api\Data\PetInterface;
-
 interface PetRepositoryInterface
 {
     /**
@@ -22,5 +20,5 @@ interface PetRepositoryInterface
      *
      * @return \Webjump\Pet\Api\Data\PetInterface
      */
-    public function save(PetInterface $pet);
+    public function save(\Webjump\Pet\Api\Data\PetInterface $pet);
 }
