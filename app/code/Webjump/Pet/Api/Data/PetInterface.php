@@ -19,11 +19,11 @@ interface PetInterface
     /**
      * Set entity id
      *
-     * @param int $id
+     * @param int|string $id
      *
      * @return $this
      */
-    public function setPetId(int $id);
+    public function setPetId($id);
 
     /**
      * Get pet name
@@ -71,7 +71,7 @@ interface PetInterface
      *
      * @return $this
      */
-    public function setCreatedAt();
+    public function setCreatedAt($createdAt);
 
     /**
      * Get owner telephone

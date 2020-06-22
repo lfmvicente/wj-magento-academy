@@ -8,75 +8,69 @@ use Webjump\Pet\Api\Data\PetInterface;
 
 class Pet extends \Magento\Framework\Model\AbstractModel implements PetInterface
 {
-    private $id;
-    private $name;
-    private $owner;
-    private $createdAt;
-    private $ownerTelephone;
-    private $ownerId;
 
     protected function _construct()
     {
-        $this->_init('Webjump\Pet\Model\ResourceModel\PetResource');
+        $this->_init(\Webjump\Pet\Model\ResourceModel\PetResource::class);
     }
 
     public function getPetId()
     {
-        return $this->id;
+        return $this->getData('entity_id');
     }
 
-    public function setPetId(int $id)
+    public function setPetId($id)
     {
-        $this->id = $id;
+        $this->setData('entity_id', $id);
     }
 
     public function getName()
     {
-        return $this->name;
+        return $this->getData('pet_name');
     }
 
     public function setName(string $petName)
     {
-        $this->name = $petName;
+        $this->setData('pet_name', $petName);
     }
 
     public function getOwner()
     {
-        return $this->owner;
+        return $this->getData('pet_owner');
     }
 
     public function setOwner(string $petOwner)
     {
-        $this->owner = $petOwner;
+        $this->setData('pet_owner', $petOwner);
     }
 
     public function getCreatedAt()
     {
-        return $this->createdAt;
+        return $this->getData('created_at');
     }
 
-    public function setCreatedAt()
+    public function setCreatedAt($createdAt)
     {
-        $this->createdAt = date('Y/m/d H:i:s');
+        $this->getData('created_at', $createdAt);
     }
 
     public function getOwnerTelephone()
     {
-        return $this->ownerTelephone;
+        return $this->getData('owner_telephone');
     }
 
     public function setOwnerTelephone(string $telephone)
     {
-        $this->ownerTelephone = $telephone;
+        $this->setData('owner_telephone', $telephone);
     }
 
     public function getOwnerId()
     {
-        return $this->ownerId;
+        return $this->getData('owner_id');
     }
 
     public function setOwnerId(int $ownerId)
     {
-        $this->ownerId = $ownerId;
+        $this->setData('owner_id', $ownerId);
     }
 }

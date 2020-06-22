@@ -44,7 +44,7 @@ class CreatePet implements DataPatchInterface
 
         $pet->setName('Cachorro');
         $pet->setOwner('Eu');
-        $pet->setCreatedAt();
+        //$pet->setCreatedAt();
         $pet->setOwnerTelephone('1198989898');
         $pet->setOwnerId(4);
 
