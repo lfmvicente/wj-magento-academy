@@ -10,7 +10,7 @@ use Magento\Framework\Controller\Result\JsonFactory;
 
 class Index extends Action
 {
-    protected $resultJsonFactory;
+    private $resultJsonFactory;
 
     public function __construct(JsonFactory $resultJsonFactory, Context $context)
     {

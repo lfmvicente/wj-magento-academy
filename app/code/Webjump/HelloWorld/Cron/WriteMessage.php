@@ -17,6 +17,6 @@ class WriteMessage
 
     public function execute()
     {
-        $this->logger->info('Hello World');
+        $this->logger->critical('Hello World');
     }
 }
