@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Webjump_Pet::menu" sortOrder="10" disabled="false" title="Pet">
+                    <resource id="Webjump_Pet::item" sortOrder="20" disabled="false" title="Pet Item"/>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>
