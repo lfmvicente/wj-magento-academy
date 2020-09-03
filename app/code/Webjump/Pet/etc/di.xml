@@ -1,17 +1,24 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Webjump\Pet\Api\PetRepositoryInterface" type="Webjump\Pet\Model\PetRepository" />
     <preference for="Webjump\Pet\Api\Data\PetInterface" type="Webjump\Pet\Model\Pet" />
+
+    <!-- Virtual Type for SearchResult Data Provider -->
+    <virtualType name="Webjump\Pet\Model\ResourceModel\Collection\Grid\PetCollection"
+                 type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">pet_kind</argument>
+            <argument name="resourceModel"
+                      xsi:type="string">Webjump\Pet\Model\ResourceModel\PetResource</argument>
+        </arguments>
+    </virtualType>
+    <!-- Collections pool -->
     <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
         <arguments>
             <argument name="collections" xsi:type="array">
-                <item name="webjump_pet_post_listing_data_source" xsi:type="string">Webjump\Pet\Model\ResourceModel\Collection</item>
+                <item name="webjump_pet_listing_data_source"
+                      xsi:type="string">Webjump\Pet\Model\ResourceModel\Collection\Grid\PetCollection</item>
             </argument>
         </arguments>
     </type>
-    <virtualType name="Webjump\Pet\Model\ResourceModel\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
-        <arguments>
-            <argument name="mainTable" xsi:type="string">webjump_pet_post</argument>
-            <argument name="resourceModel" xsi:type="string">Webjump\Pet\Model\ResourceModel</argument>
-        </arguments>
-    </virtualType>
+
 </config>

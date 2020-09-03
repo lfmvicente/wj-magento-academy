@@ -26,22 +26,22 @@ class Pet extends \Magento\Framework\Model\AbstractModel implements PetInterface
 
     public function getName()
     {
-        return $this->getData('pet_name');
+        return $this->getData('name');
     }
 
-    public function setName(string $petName)
+    public function setName(string $name)
     {
-        $this->setData('pet_name', $petName);
+        $this->setData('name', $name);
     }
 
-    public function getOwner()
+    public function getDescription()
     {
-        return $this->getData('pet_owner');
+        return $this->getData('description');
     }
 
-    public function setOwner(string $petOwner)
+    public function setDescription(string $description)
     {
-        $this->setData('pet_owner', $petOwner);
+        $this->setData('description', $description);
     }
 
     public function getCreatedAt()
@@ -52,25 +52,5 @@ class Pet extends \Magento\Framework\Model\AbstractModel implements PetInterface
     public function setCreatedAt($createdAt)
     {
         $this->getData('created_at', $createdAt);
-    }
-
-    public function getOwnerTelephone()
-    {
-        return $this->getData('owner_telephone');
-    }
-
-    public function setOwnerTelephone(string $telephone)
-    {
-        $this->setData('owner_telephone', $telephone);
-    }
-
-    public function getOwnerId()
-    {
-        return $this->getData('owner_id');
-    }
-
-    public function setOwnerId(int $ownerId)
-    {
-        $this->setData('owner_id', $ownerId);
     }
 }

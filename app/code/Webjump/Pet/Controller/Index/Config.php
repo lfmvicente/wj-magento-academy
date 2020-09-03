@@ -7,26 +7,22 @@ namespace Webjump\Pet\Controller\Index;
 class Config extends \Magento\Framework\App\Action\Action
 {
 
-    protected $helperData;
-
+    protected $resultPageFactory = false;
     public function __construct(
-        \Magento\Framework\App\Action\Context $context,
-        \Webjump\Pet\Helper\Data $helperData
-
-    )
-    {
-        $this->helperData = $helperData;
-        return parent::__construct($context);
+        \Magento\Backend\App\Action\Context $context,
+        \Magento\Framework\View\Result\PageFactory $resultPageFactory
+    ) {
+        parent::__construct($context);
+        $this->resultPageFactory = $resultPageFactory;
     }
-
     public function execute()
     {
-
-        // TODO: Implement execute() method.
-
-        echo $this->helperData->getGeneralConfig('enable');
-        exit();
-
+        $resultPage = $this->resultPageFactory->create();
+        $resultPage->setActiveMenu('Webjump_Pet::all_pets');
+        $resultPage->addBreadcrumb(__('Hello'), __('Hello'));
+        $resultPage->addBreadcrumb(__('World'), __('World'));
+        $resultPage->getConfig()->getTitle()->prepend(__('Hello World'));
+        return $resultPage;
     }
 }
 

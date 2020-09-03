@@ -20,5 +20,16 @@
             "PRIMARY": true,
             "PET_TABLE_OWNER_ID_CUSTOMER_ENTITY_ENTITY_ID": true
         }
+    },
+    "pet_kind": {
+        "column": {
+            "entity_id": true,
+            "name": true,
+            "description": true,
+            "created_at": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
     }
 }

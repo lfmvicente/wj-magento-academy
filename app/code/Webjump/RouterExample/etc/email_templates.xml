@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:Magento:module:Magento_Email:etc/email_templates.xsd">
+    <template
+            id="routerexample_test_template"
+            label="Test email"
+            file="routerexample/test.html"
+            type="html"
+            module="Webjump_RouterExample"
+            area="frontend"
+    />
+</config>

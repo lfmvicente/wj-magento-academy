@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Webjump\Pet\Api\Data;
 
-use Magento\Customer\Api\Data\CustomerInterface;
-
 interface PetInterface
 {
 
@@ -42,20 +40,11 @@ interface PetInterface
     public function setName(string $petName);
 
     /**
-     * Get pet owner
+     * Get pet description
      *
      * @return string|null
      */
-    public function getOwner();
-
-    /**
-     * Set pet owner
-     *
-     * @param string $petOwner
-     *
-     * @return $this
-     */
-    public function setOwner(string $petOwner);
+    public function getDescription();
 
     /**
      * Get created at
@@ -72,36 +61,4 @@ interface PetInterface
      * @return $this
      */
     public function setCreatedAt($createdAt);
-
-    /**
-     * Get owner telephone
-     *
-     * @return string|null
-     */
-    public function getOwnerTelephone();
-
-    /**
-     * Set owner telephone
-     *
-     * @param string $telephone
-     *
-     * @return $this
-     */
-    public function setOwnerTelephone(string $telephone);
-
-    /**
-     * Get owner id
-     *
-     * @return int|null
-     */
-    public function getOwnerId();
-
-    /**
-     * Set Owner id
-     *
-     * @param int $ownerId
-     *
-     * @return $this
-     */
-    public function setOwnerId(int $ownerId);
 }

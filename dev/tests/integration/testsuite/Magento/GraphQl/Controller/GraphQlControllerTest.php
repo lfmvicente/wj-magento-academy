@@ -175,7 +175,7 @@ query GetProducts(\$filterInput:ProductAttributeFilterInput){
             id
             name
             sku
-        }
+        }  
     }
 }
 QUERY;
@@ -223,12 +223,12 @@ QUERY;
     }
   ])
     {
-      items{
+      items{        
       attribute_code
       attribute_type
       entity_type
-    }
-    }
+    }      
+    }  
   }
 QUERY;
 

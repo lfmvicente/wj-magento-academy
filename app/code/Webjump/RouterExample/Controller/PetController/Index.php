@@ -28,10 +28,8 @@ class Index extends Action
     public function execute()
     {
         $pet =  $this->petFactory->create();
-        $pet->setName('Dog');
-        $pet->setOwner('Felipe');
-        $pet->setOwnerTelephone('11989896544');
-        $pet->setOwnerId(1);
+        $pet->setName('Pincher');
+        $pet->setDescription('Cachorro Louco');
         $this->petRepository->save($pet);
     }
 }

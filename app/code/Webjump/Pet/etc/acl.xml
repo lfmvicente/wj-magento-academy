@@ -3,8 +3,13 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
-                <resource id="Webjump_Pet::menu" sortOrder="10" disabled="false" title="Pet">
-                    <resource id="Webjump_Pet::item" sortOrder="20" disabled="false" title="Pet Item"/>
+                <resource id="Webjump_Pet::menu" sortOrder="10" title="Pet">
+                    <resource id="Webjump_Pet::all_pets" sortOrder="10" title="Pet Item">
+                        <resource id="Webjump_Pet::pet_create" title="Create" translate="title" sortOrder="10" />
+                        <resource id="Webjump_Pet::pet_read" title="Read" translate="title" sortOrder="20" />
+                        <resource id="Webjump_Pet::pet_update" title="Update" translate="title" sortOrder="30" />
+                        <resource id="Webjump_Pet::pet_delete" title="Delete" translate="title" sortOrder="40" />
+                    </resource>
                 </resource>
             </resource>
         </resources>

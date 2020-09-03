@@ -4,14 +4,15 @@ declare(strict_types=1);
 
 namespace Webjump\Pet\Controller\Adminhtml\Item;
 
+use Magento\Backend\App\Action\Context;
+use Magento\Framework\View\Result\PageFactory;
+
 class Index extends \Magento\Backend\App\Action
 {
 
     protected $resultPageFactory;
 
-    public function __construct(
-        \Magento\Backend\App\Action\Context $context,
-        \Magento\Framework\View\Result\PageFactory $resultPageFactory)
+    public function __construct(Context $context, PageFactory $resultPageFactory)
     {
         parent::__construct($context);
         $this->resultPageFactory = $resultPageFactory;
@@ -19,7 +20,14 @@ class Index extends \Magento\Backend\App\Action
 
     public function execute()
     {
-        return  $resultPage = $this->resultPageFactory->create();
+        /** @var \Magento\Backend\Model\View\Result\Page $resultPage */
+        $resultPage = $this->resultPageFactory->create();
+        $resultPage->setActiveMenu('Webjump_Pet::all_pets')
+            ->addBreadcrumb(
+                __('Pet Kind'), __('Pet Kind')
+            )->getConfig()->getTitle()->prepend(__('Pet Kind'));
+
+        return $resultPage;
     }
 
     protected function _isAllowed()

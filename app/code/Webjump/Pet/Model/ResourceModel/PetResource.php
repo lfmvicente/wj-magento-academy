@@ -9,7 +9,7 @@ class PetResource extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
 
     protected function _construct()
     {
-        $this->_init('pet_table', 'entity_id');
+        $this->_init('pet_kind', 'entity_id');
     }
 
 }
