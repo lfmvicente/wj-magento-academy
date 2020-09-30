@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/pet/:petId" method="GET">
+        <service class="Webjump\Pet\Api\PetRepositoryInterface" method="getById"/>
+        <resources>
+            <resource ref="Webjump_Pet::pet_read"/>
+        </resources>
+    </route>
+    <route url="/V1/pet/:petId" method="PUT">
+        <service class="Webjump\Pet\Api\PetRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="Webjump_Pet::pet_create"/>
+        </resources>
+    </route>
+    <route url="/V1/pet/:petId" method="DELETE">
+        <service class="Webjump\Pet\Api\PetRepositoryInterface" method="deleteById"/>
+        <resources>
+            <resource ref="Webjump_Pet::pet_delete"/>
+        </resources>
+    </route>
+    <!--<route url="/V1/pet" method="POST">-->
+        <!--<service class="Webjump\Pet\Api\PetRepositoryInterface" method="createAccount"/>-->
+        <!--<resources>-->
+            <!--<resource ref="anonymous"/>-->
+        <!--</resources>-->
+    <!--</route>-->
+</routes>

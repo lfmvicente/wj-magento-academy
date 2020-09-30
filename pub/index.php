@@ -8,7 +8,9 @@
 
 use Magento\Framework\App\Bootstrap;
 use Magento\Framework\App\Filesystem\DirectoryList;
-
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 try {
     require __DIR__ . '/../app/bootstrap.php';
 } catch (\Exception $e) {

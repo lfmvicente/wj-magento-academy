@@ -16,7 +16,7 @@
     <settings>
         <buttons>
             <button name="add">
-                <url path="*/*/create"/>
+                <url path="www.google.com"/>
                 <class>primary</class>
                 <label translate="true">Add New Pet Kind</label>
             </button>

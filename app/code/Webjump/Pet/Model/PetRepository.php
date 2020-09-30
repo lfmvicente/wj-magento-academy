@@ -33,10 +33,10 @@ class PetRepository implements PetRepositoryInterface
         $petModel = $this->petFactory->create();
 
         $petResource->load($petModel, $petId, 'entity_id');
-        if (empty($petModel->getById())) {
-            throw new \Magento\Framework\Exception\NoSuchEntityException(__('Could not find Pet with the id'));
-        }
-        return $petModel;
+//        if (empty($petModel->getById())) {
+//            throw new \Magento\Framework\Exception\NoSuchEntityException(__('Could not find Pet with the id'));
+//        }
+//        return $petModel;
     }
 
     public function save(PetInterface $pet)

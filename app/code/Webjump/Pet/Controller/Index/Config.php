@@ -4,25 +4,36 @@ declare(strict_types=1);
 
 namespace Webjump\Pet\Controller\Index;
 
-class Config extends \Magento\Framework\App\Action\Action
+use Magento\Backend\App\Action\Context;
+use Magento\Framework\App\Action\Action;
+use Webjump\Pet\Model\Data;
+use Magento\Catalog\Model\Product\Attribute\Repository;
+
+class Config extends Action
 {
 
-    protected $resultPageFactory = false;
+    protected $data;
+    private $attribute;
+
     public function __construct(
-        \Magento\Backend\App\Action\Context $context,
-        \Magento\Framework\View\Result\PageFactory $resultPageFactory
-    ) {
-        parent::__construct($context);
-        $this->resultPageFactory = $resultPageFactory;
+        Context $context,
+        Data $data,
+        Repository $attribute
+    )
+    {
+        $this->data = $data;
+        $this->attribute = $attribute;
+        return parent::__construct($context);
     }
+
     public function execute()
     {
-        $resultPage = $this->resultPageFactory->create();
-        $resultPage->setActiveMenu('Webjump_Pet::all_pets');
-        $resultPage->addBreadcrumb(__('Hello'), __('Hello'));
-        $resultPage->addBreadcrumb(__('World'), __('World'));
-        $resultPage->getConfig()->getTitle()->prepend(__('Hello World'));
-        return $resultPage;
+
+        echo $this->data->getGeneralConfig('enable');
+        echo $this->data->getGeneralConfig('display_text');
+//        echo $this->attribute->getData('custom_attribute_pet');
+        exit();
+
     }
 }
 

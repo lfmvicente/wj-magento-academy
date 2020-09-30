@@ -3,7 +3,7 @@
     <default>
         <pet>
             <general>
-                <enable>1</enable>
+                <enable>0</enable>
             </general>
         </pet>
     </default>
