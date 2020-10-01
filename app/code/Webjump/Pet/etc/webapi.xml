@@ -16,7 +16,7 @@
     <route url="/V1/pet/:petId" method="PUT">
         <service class="Webjump\Pet\Api\PetRepositoryInterface" method="save"/>
         <resources>
-            <resource ref="Webjump_Pet::pet_create"/>
+            <resource ref="Webjump_Pet::pet_update"/>
         </resources>
     </route>
     <route url="/V1/pet/:petId" method="DELETE">
@@ -25,10 +25,10 @@
             <resource ref="Webjump_Pet::pet_delete"/>
         </resources>
     </route>
-    <!--<route url="/V1/pet" method="POST">-->
-        <!--<service class="Webjump\Pet\Api\PetRepositoryInterface" method="createAccount"/>-->
-        <!--<resources>-->
-            <!--<resource ref="anonymous"/>-->
-        <!--</resources>-->
-    <!--</route>-->
+    <route url="/V1/pet/" method="POST">
+        <service class="Webjump\Pet\Api\PetRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="Webjump_Pet::pet_create"/>
+        </resources>
+    </route>
 </routes>

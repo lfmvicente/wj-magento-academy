@@ -11,5 +11,4 @@ class PetResource extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
     {
         $this->_init('pet_kind', 'entity_id');
     }
-
 }

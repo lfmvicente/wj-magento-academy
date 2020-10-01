@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Webjump\Pet\Model;
 
+use Magento\Framework\Exception\NoSuchEntityException;
 use Webjump\Pet\Api\PetRepositoryInterface;
 use Webjump\Pet\Api\Data\PetInterfaceFactory;
 use Webjump\Pet\Model\ResourceModel\Collection\PetCollectionFactory;
@@ -33,10 +34,10 @@ class PetRepository implements PetRepositoryInterface
         $petModel = $this->petFactory->create();
 
         $petResource->load($petModel, $petId, 'entity_id');
-//        if (empty($petModel->getById())) {
-//            throw new \Magento\Framework\Exception\NoSuchEntityException(__('Could not find Pet with the id'));
-//        }
-//        return $petModel;
+        if (empty($petModel->getPetId())) {
+            throw new NoSuchEntityException(__('Could not find Pet with the id'));
+        }
+        return $petModel;
     }
 
     public function save(PetInterface $pet)
@@ -44,4 +45,20 @@ class PetRepository implements PetRepositoryInterface
         $petResource = $this->petResourceFactory->create();
         $petResource->save($pet);
     }
+
+    public function deleteById($petId)
+    {
+        $petResource = $this->petResourceFactory->create();
+        $petModel = $this->petFactory->create();
+
+        $petResource->load($petModel, $petId, 'entity_id');
+        if (empty($petModel->getPetId())) {
+            throw new NoSuchEntityException(__('Could not find Pet with the id'));
+        }
+        $petResource->delete($petModel);
+        return 'Pet Deleted';
+
+    }
+
+
 }

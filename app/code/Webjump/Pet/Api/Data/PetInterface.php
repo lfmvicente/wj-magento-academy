@@ -47,6 +47,15 @@ interface PetInterface
     public function getDescription();
 
     /**
+     * Set pet description
+     *
+     * @param string $petDescription
+     *
+     * @return $this
+     */
+    public function setDescription(string $petDescription);
+
+    /**
      * Get created at
      *
      * @return string|null
