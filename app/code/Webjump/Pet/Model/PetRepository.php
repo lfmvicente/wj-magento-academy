@@ -43,7 +43,8 @@ class PetRepository implements PetRepositoryInterface
     public function save(PetInterface $pet)
     {
         $petResource = $this->petResourceFactory->create();
-        $petResource->save($pet);
+        $pet = $petResource->save($pet);
+        return $pet;
     }
 
     public function deleteById($petId)
@@ -59,6 +60,4 @@ class PetRepository implements PetRepositoryInterface
         return 'Pet Deleted';
 
     }
-
-
 }

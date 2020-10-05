@@ -1,0 +1,30 @@
+type Query {
+    pet (entity_id: Int): Pet
+    @resolver(class:"Webjump\\PetGraphQl\\Model\\Resolver\\Pet")
+    @doc(description:
+        "The Pet query returns information about a Pet Kind")
+    @cache(cacheable: true)
+}
+
+type Pet @doc(description: "Pet defines the Pet Kind name and other details") {
+    entity_id: Int
+    name: String
+    description: String
+    created_at: String
+}
+
+input PetInput {
+    entity_id: Int
+    name: String
+    description: String
+}
+
+type PetOutput {
+    pet: Pet!
+}
+
+type Mutation {
+    createPet (input: PetInput!): PetOutput @resolver(class:"Webjump\\PetGraphQl\\Model\\Resolver\\CreatePet") @doc(description: "Create new pet kind")
+    updatePet (input: PetInput!): PetOutput @resolver(class:"Webjump\\PetGraphQl\\Model\\Resolver\\UpdatePet") @doc(description: "Update pet kind")
+    deletePet (entity_id: Int!): Boolean @resolver(class:"Webjump\\PetGraphQl\\Model\\Resolver\\DeletePet") @doc(description: "Delete pet kind")
+}

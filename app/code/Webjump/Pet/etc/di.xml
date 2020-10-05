@@ -20,5 +20,7 @@
             </argument>
         </arguments>
     </type>
-
+    <type name="Magento\Theme\Block\Html\Header">
+        <plugin name="webjump_message_get_pet_name" type="Webjump\Pet\Plugin\WelcomeMessage"/>
+    </type>
 </config>
