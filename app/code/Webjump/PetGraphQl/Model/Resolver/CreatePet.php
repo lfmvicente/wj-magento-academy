@@ -53,7 +53,7 @@ class CreatePet implements ResolverInterface
         }
 
         if (empty($args['input']['name'])) {
-            throw new GraphQlInputException(__('Missing input values'));
+            throw new GraphQlInputException(__('Missing name value'));
         }
 
         $pet = $this->petFactory->create();

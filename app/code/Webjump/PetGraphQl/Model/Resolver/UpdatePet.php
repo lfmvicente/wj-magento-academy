@@ -50,7 +50,7 @@ class UpdatePet implements ResolverInterface
         }
 
         if (empty($args['input']['entity_id'])) {
-            throw new GraphQlInputException(__('Missing input values'));
+            throw new GraphQlInputException(__('Missing id value'));
         }
 
         $pet = $this->petRepository->getById($args['input']['entity_id']);

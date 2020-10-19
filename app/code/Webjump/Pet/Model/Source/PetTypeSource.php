@@ -14,6 +14,11 @@ use Magento\Eav\Model\Entity\Attribute\Source\AbstractSource;
 use Webjump\Pet\Model\ResourceModel\GetAllPetTypeOptions;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 
+/**
+ * Class PetTypeSource
+ * @package Webjump\Pet\Model\Source
+ * @codeCoverageIgnore
+ */
 class PetTypeSource extends AbstractSource
 {
 
@@ -45,6 +50,7 @@ class PetTypeSource extends AbstractSource
                  $this->_options[] = ['label' => $item['name'], 'value' => $item['entity_id']];
              }
         }
+
         return $this->_options;
     }
 }

@@ -43,7 +43,6 @@ class Pet implements BatchResolverInterface
         $response = $this->batchResponseFactory->create();
 
         foreach ($requests as $item) {
-
             $arguments = $item->getArgs();
             $pet = $this->petRepository->getById($arguments['entity_id']);
 

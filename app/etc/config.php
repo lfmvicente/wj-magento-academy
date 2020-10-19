@@ -248,6 +248,7 @@ return [
         'Webjump_Endpoint' => 1,
         'Webjump_HelloWorld' => 1,
         'Webjump_Pet' => 1,
+        'Webjump_PetGraphQl' => 1,
         'Webjump_RouterExample' => 1,
         'Yotpo_Yotpo' => 1
     ]

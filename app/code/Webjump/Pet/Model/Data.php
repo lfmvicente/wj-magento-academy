@@ -8,12 +8,19 @@
 
 namespace Webjump\Pet\Model;
 
-use Magento\Framework\App\Helper\AbstractHelper;
 use Magento\Store\Model\ScopeInterface;
+use Magento\Framework\App\Config\ScopeConfigInterface;
 
-class Data extends AbstractHelper
+class Data
 {
     const XML_PATH_HELLOWORLD = 'pet/';
+
+    private $scopeConfig;
+
+    public function __construct(ScopeConfigInterface $scopeConfig)
+    {
+        $this->scopeConfig = $scopeConfig;
+    }
 
     public function getConfigValue($field, $storeId = null)
     {
