@@ -9,6 +9,7 @@ use Magento\Framework\View\Result\PageFactory;
 
 class Index extends \Magento\Backend\App\Action
 {
+    const ADMIN_RESOURCE = 'Webjump_Pet::pet_read';
 
     protected $resultPageFactory;
 

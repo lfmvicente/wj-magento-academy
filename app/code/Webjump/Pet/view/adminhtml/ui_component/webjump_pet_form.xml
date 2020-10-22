@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <argument name="data" xsi:type="array">
+        <item name="js_config" xsi:type="array">
+            <item name="provider" xsi:type="string">webjump_pet_form.webjump_pet_form_data_source</item>
+        </item>
+        <item name="label" xsi:type="string" translate="true">General Information</item>
+        <item name="template" xsi:type="string">templates/form/collapsible</item>
+    </argument>
+    <settings>
+        <buttons>
+            <button name="save" class="Webjump\Pet\Block\View\UiComponent\Buttons\SaveButton"/>
+            <button name="back" class="Webjump\Pet\Block\View\UiComponent\Buttons\BackButton"/>
+        </buttons>
+        <namespace>webjump_pet_form</namespace>
+        <dataScope>data</dataScope>
+        <deps>
+            <dep>webjump_pet_form.webjump_pet_form_data_source</dep>
+        </deps>
+    </settings>
+    <dataSource name="webjump_pet_form_data_source">
+        <argument name="data" xsi:type="array">
+            <item name="js_config" xsi:type="array">
+                <item name="component" xsi:type="string">Magento_Ui/js/form/provider</item>
+            </item>
+        </argument>
+        <settings>
+            <submitUrl path="webjump_pet/action/save"/>
+        </settings>
+        <dataProvider class="Webjump\Pet\Ui\Component\Data\DataProvider" name="webjump_pet_form_data_source">
+            <settings>
+                <requestFieldName>entity_id</requestFieldName>
+                <primaryFieldName>entity_id</primaryFieldName>
+            </settings>
+        </dataProvider>
+    </dataSource>
+    <fieldset name="general">
+        <settings>
+            <label/>
+        </settings>
+        <field name="entity_id" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">items</item>
+                </item>
+            </argument>
+            <settings>
+                <visible>false</visible>
+                <dataType>text</dataType>
+                <dataScope>entity_id</dataScope>
+            </settings>
+        </field>
+        <field name="name" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">items</item>
+                </item>
+            </argument>
+            <settings>
+                <visible>true</visible>
+                <dataType>text</dataType>
+                <dataScope>name</dataScope>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">true</rule>
+                </validation>
+                <label translate="true">Name</label>
+            </settings>
+        </field>
+        <field name="description" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">items</item>
+                </item>
+            </argument>
+            <settings>
+                <visible>true</visible>
+                <dataType>text</dataType>
+                <dataScope>description</dataScope>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">false</rule>
+                </validation>
+                <label translate="true">Pet Description</label>
+            </settings>
+        </field>
+    </fieldset>
+</form>

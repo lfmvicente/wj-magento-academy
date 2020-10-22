@@ -47,6 +47,11 @@ class PetRepository implements PetRepositoryInterface
         return $pet;
     }
 
+    /**
+     * @param int $petId
+     * @return bool|string
+     * @throws NoSuchEntityException
+     */
     public function deleteById($petId)
     {
         $petResource = $this->petResourceFactory->create();

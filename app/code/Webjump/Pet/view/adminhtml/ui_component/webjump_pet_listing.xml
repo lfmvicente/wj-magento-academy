@@ -16,7 +16,7 @@
     <settings>
         <buttons>
             <button name="add">
-                <url path="www.google.com"/>
+                <url path="webjump_pet/item/create"/>
                 <class>primary</class>
                 <label translate="true">Add New Pet Kind</label>
             </button>
@@ -60,7 +60,7 @@
                         <message translate="true">Are you sure you want to delete selected items?</message>
                         <title translate="true">Delete items</title>
                     </confirm>
-                    <url path="webjump_min_quantity/massAction/delete"/>
+                    <url path="webjump_pet/massAction/delete"/>
                     <type>delete</type>
                     <label translate="true">Delete</label>
                 </settings>
@@ -73,12 +73,12 @@
         <settings>
             <editorConfig>
                 <param name="clientConfig" xsi:type="array">
-                    <item name="saveUrl" xsi:type="url" path="webjump_min_quantity/inlineAction/Edit"/>
+                    <item name="saveUrl" xsi:type="url" path="webjump_pet/inlineAction/Edit"/>
                     <item name="validateBeforeSave" xsi:type="boolean">false</item>
                 </param>
                 <param name="indexField" xsi:type="string">entity_id</param>
                 <param name="enabled" xsi:type="boolean">true</param>
-                <param name="selectProvider" xsi:type="string">webjump_pet_listing.webjump_pet_listing.webjump_pet_listing_columns.entity_id</param>
+                <param name="selectProvider" xsi:type="string">webjump_pet_listing.webjump_pet_listing.webjump_pet_listing_columns.ids</param>
             </editorConfig>
             <childDefaults>
                 <param name="fieldAction" xsi:type="array">
@@ -91,7 +91,7 @@
                 </param>
             </childDefaults>
         </settings>
-        <selectionsColumn name="entity_id">
+        <selectionsColumn name="ids">
             <settings>
                 <indexField>entity_id</indexField>
             </settings>
@@ -138,7 +138,7 @@
         <actionsColumn name="actions" class="Magento\Backend\Ui\Component\Listing\Column\EditAction">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
-                    <item name="editUrlPath" xsi:type="string">webjump_min_quantity/index/edit</item>
+                    <item name="editUrlPath" xsi:type="string">webjump_pet/item/edit</item>
                 </item>
             </argument>
             <settings>
