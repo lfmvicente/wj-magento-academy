@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alr:test-suite xmlns:alr="urn:model.allure.qatools.yandex.ru" start="1603389319778" stop="1603389319806" version="1.4.0">
+  <name>Webjump\PetGraphQl\Test\Unit\Model\Resolver\CreatePetTest</name>
+  <test-cases>
+    <test-case start="1603389319779" stop="1603389319794" status="passed">
+      <name>testResolveWillThrowGraphQlInputException</name>
+    </test-case>
+    <test-case start="1603389319794" stop="1603389319798" status="passed">
+      <name>testResolveWillThrowGraphQlInputExceptionBecauseNameIsMissing</name>
+    </test-case>
+    <test-case start="1603389319798" stop="1603389319806" status="passed">
+      <name>testResolve</name>
+    </test-case>
+  </test-cases>
+</alr:test-suite>

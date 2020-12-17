@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alr:test-suite xmlns:alr="urn:model.allure.qatools.yandex.ru" start="1603389319603" stop="1603389319704" version="1.4.0">
+  <name>Webjump\Pet\Test\Unit\Model\PetRepositoryTest</name>
+  <test-cases>
+    <test-case start="1603389319603" stop="1603389319655" status="passed">
+      <name>testGetById</name>
+    </test-case>
+    <test-case start="1603389319655" stop="1603389319682" status="passed">
+      <name>testGetByIdWillThrowNoSuchException</name>
+    </test-case>
+    <test-case start="1603389319682" stop="1603389319691" status="passed">
+      <name>testSave</name>
+    </test-case>
+    <test-case start="1603389319691" stop="1603389319698" status="passed">
+      <name>testDeleteById</name>
+    </test-case>
+    <test-case start="1603389319698" stop="1603389319704" status="passed">
+      <name>testDeleteByIdWillThrowNoSuchException</name>
+    </test-case>
+  </test-cases>
+</alr:test-suite>

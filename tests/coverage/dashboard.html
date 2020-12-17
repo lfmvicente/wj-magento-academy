@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/webjump-nb138/Documentos/Academia_Webjump/mage/app/code/Webjump</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href=".css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href=".css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href=".css/style.css" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]>
+  <script src=".js/html5shiv.min.js"></script>
+  <script src=".js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="index.html">/home/webjump-nb138/Documentos/Academia_Webjump/mage/app/code/Webjump</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Endpoint/Model/Hello.php.html#9">Webjump\Endpoint\Model\Hello</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Model/ResourceModel/Collection/PetCollection.php.html#7">Webjump\Pet\Model\ResourceModel\Collection\PetCollection</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/RedirectController/Index.php.html#11">Webjump\RouterExample\Controller\RedirectController\Index</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/RawController/Index.php.html#11">Webjump\RouterExample\Controller\RawController\Index</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/PetController/Index.php.html#12">Webjump\RouterExample\Controller\PetController\Index</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/PageController/Index.php.html#11">Webjump\RouterExample\Controller\PageController\Index</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/JsonController/Index.php.html#11">Webjump\RouterExample\Controller\JsonController\Index</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/Index/Sendemail.php.html#19">Webjump\RouterExample\Controller\Index\Sendemail</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/ForwardController/Index.php.html#13">Webjump\RouterExample\Controller\ForwardController\Index</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Block/Hello.php.html#9">Webjump\RouterExample\Block\Hello</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Ui/Component/Data/DataProvider.php.html#11">Webjump\Pet\Ui\Component\Data\DataProvider</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Setup/Patch/Data/CreatePet.php.html#14">Webjump\Pet\Setup\Patch\Data\CreatePet</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Setup/Patch/Data/AddPet.php.html#10">Webjump\Pet\Setup\Patch\Data\AddPet</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Setup/Patch/Data/AddCustomerAttribute.php.html#22">Webjump\Pet\Setup\Patch\Data\AddCustomerAttribute</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Model/ResourceModel/PetResource.php.html#7">Webjump\Pet\Model\ResourceModel\PetResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Model/PetDataProvider.php.html#9">Webjump\Pet\Model\PetDataProvider</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HelloWorld/Console/Command/WriteMessageCommand.php.html#14">Webjump\HelloWorld\Console\Command\WriteMessageCommand</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Model/Pet.php.html#9">Webjump\Pet\Model\Pet</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Controller/Adminhtml/MassAction/Delete.php.html#18">Webjump\Pet\Controller\Adminhtml\MassAction\Delete</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Controller/Adminhtml/Item/Edit.php.html#16">Webjump\Pet\Controller\Adminhtml\Item\Edit</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Controller/Adminhtml/Item/Create.php.html#16">Webjump\Pet\Controller\Adminhtml\Item\Create</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Controller/Adminhtml/InlineAction/Edit.php.html#19">Webjump\Pet\Controller\Adminhtml\InlineAction\Edit</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Controller/Adminhtml/Action/Save.php.html#21">Webjump\Pet\Controller\Adminhtml\Action\Save</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Block/View/UiComponent/Buttons/SaveButton.php.html#10">Webjump\Pet\Block\View\UiComponent\Buttons\SaveButton</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Block/View/UiComponent/Buttons/BackButton.php.html#10">Webjump\Pet\Block\View\UiComponent\Buttons\BackButton</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HelloWorld/Plugin/ActionPlugin.php.html#11">Webjump\HelloWorld\Plugin\ActionPlugin</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HelloWorld/Observer/CustomObserver.php.html#11">Webjump\HelloWorld\Observer\CustomObserver</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HelloWorld/Cron/WriteMessage.php.html#9">Webjump\HelloWorld\Cron\WriteMessage</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HelloWorld/Controller/TestController/Index.php.html#11">Webjump\HelloWorld\Controller\TestController\Index</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/RouterController/Index.php.html#11">Webjump\RouterExample\Controller\RouterController\Index</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Model/Data.php.html#14">Webjump\Pet\Model\Data</a></td><td class="text-right">80%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Pet/Controller/Adminhtml/Action/Save.php.html#21">Webjump\Pet\Controller\Adminhtml\Action\Save</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Pet/Controller/Adminhtml/MassAction/Delete.php.html#18">Webjump\Pet\Controller\Adminhtml\MassAction\Delete</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Pet/Controller/Adminhtml/InlineAction/Edit.php.html#19">Webjump\Pet\Controller\Adminhtml\InlineAction\Edit</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="HelloWorld/Console/Command/WriteMessageCommand.php.html#14">Webjump\HelloWorld\Console\Command\WriteMessageCommand</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Pet/Ui/Component/Data/DataProvider.php.html#11">Webjump\Pet\Ui\Component\Data\DataProvider</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Endpoint/Model/Hello.php.html#9">Webjump\Endpoint\Model\Hello</a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Endpoint/Model/Hello.php.html#11"><abbr title="Webjump\Endpoint\Model\Hello::name">name</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Setup/Patch/Data/CreatePet.php.html#40"><abbr title="Webjump\Pet\Setup\Patch\Data\CreatePet::apply">apply</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Model/PetDataProvider.php.html#16"><abbr title="Webjump\Pet\Model\PetDataProvider::getData">getData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Model/ResourceModel/Collection/PetCollection.php.html#9"><abbr title="Webjump\Pet\Model\ResourceModel\Collection\PetCollection::_construct">_construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Model/ResourceModel/PetResource.php.html#10"><abbr title="Webjump\Pet\Model\ResourceModel\PetResource::_construct">_construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Setup/Patch/Data/AddCustomerAttribute.php.html#38"><abbr title="Webjump\Pet\Setup\Patch\Data\AddCustomerAttribute::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Setup/Patch/Data/AddCustomerAttribute.php.html#48"><abbr title="Webjump\Pet\Setup\Patch\Data\AddCustomerAttribute::apply">apply</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Setup/Patch/Data/AddCustomerAttribute.php.html#74"><abbr title="Webjump\Pet\Setup\Patch\Data\AddCustomerAttribute::getDependencies">getDependencies</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Setup/Patch/Data/AddCustomerAttribute.php.html#79"><abbr title="Webjump\Pet\Setup\Patch\Data\AddCustomerAttribute::getAliases">getAliases</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Setup/Patch/Data/AddPet.php.html#15"><abbr title="Webjump\Pet\Setup\Patch\Data\AddPet::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Setup/Patch/Data/AddPet.php.html#20"><abbr title="Webjump\Pet\Setup\Patch\Data\AddPet::apply">apply</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Setup/Patch/Data/AddPet.php.html#55"><abbr title="Webjump\Pet\Setup\Patch\Data\AddPet::getDependencies">getDependencies</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Setup/Patch/Data/AddPet.php.html#60"><abbr title="Webjump\Pet\Setup\Patch\Data\AddPet::getAliases">getAliases</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Setup/Patch/Data/CreatePet.php.html#20"><abbr title="Webjump\Pet\Setup\Patch\Data\CreatePet::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Setup/Patch/Data/CreatePet.php.html#30"><abbr title="Webjump\Pet\Setup\Patch\Data\CreatePet::getDependencies">getDependencies</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Setup/Patch/Data/CreatePet.php.html#35"><abbr title="Webjump\Pet\Setup\Patch\Data\CreatePet::getAliases">getAliases</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Ui/Component/Data/DataProvider.php.html#14"><abbr title="Webjump\Pet\Ui\Component\Data\DataProvider::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Model/Pet.php.html#47"><abbr title="Webjump\Pet\Model\Pet::getCreatedAt">getCreatedAt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/PageController/Index.php.html#21"><abbr title="Webjump\RouterExample\Controller\PageController\Index::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/RouterController/Index.php.html#15"><abbr title="Webjump\RouterExample\Controller\RouterController\Index::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/RedirectController/Index.php.html#22"><abbr title="Webjump\RouterExample\Controller\RedirectController\Index::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/RedirectController/Index.php.html#16"><abbr title="Webjump\RouterExample\Controller\RedirectController\Index::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/RawController/Index.php.html#13"><abbr title="Webjump\RouterExample\Controller\RawController\Index::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/PetController/Index.php.html#28"><abbr title="Webjump\RouterExample\Controller\PetController\Index::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/PetController/Index.php.html#18"><abbr title="Webjump\RouterExample\Controller\PetController\Index::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/PageController/Index.php.html#15"><abbr title="Webjump\RouterExample\Controller\PageController\Index::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Ui/Component/Data/DataProvider.php.html#30"><abbr title="Webjump\Pet\Ui\Component\Data\DataProvider::getData">getData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/JsonController/Index.php.html#21"><abbr title="Webjump\RouterExample\Controller\JsonController\Index::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/JsonController/Index.php.html#15"><abbr title="Webjump\RouterExample\Controller\JsonController\Index::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/Index/Sendemail.php.html#47"><abbr title="Webjump\RouterExample\Controller\Index\Sendemail::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/Index/Sendemail.php.html#34"><abbr title="Webjump\RouterExample\Controller\Index\Sendemail::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/ForwardController/Index.php.html#15"><abbr title="Webjump\RouterExample\Controller\ForwardController\Index::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Block/Hello.php.html#11"><abbr title="Webjump\RouterExample\Block\Hello::getHello">getHello</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HelloWorld/Console/Command/WriteMessageCommand.php.html#18"><abbr title="Webjump\HelloWorld\Console\Command\WriteMessageCommand::configure">configure</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Model/Pet.php.html#52"><abbr title="Webjump\Pet\Model\Pet::setCreatedAt">setCreatedAt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Model/Pet.php.html#42"><abbr title="Webjump\Pet\Model\Pet::setDescription">setDescription</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HelloWorld/Plugin/ActionPlugin.php.html#16"><abbr title="Webjump\HelloWorld\Plugin\ActionPlugin::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Block/View/UiComponent/Buttons/SaveButton.php.html#17"><abbr title="Webjump\Pet\Block\View\UiComponent\Buttons\SaveButton::getButtonData">getButtonData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Block/View/UiComponent/Buttons/BackButton.php.html#28"><abbr title="Webjump\Pet\Block\View\UiComponent\Buttons\BackButton::getButtonData">getButtonData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Block/View/UiComponent/Buttons/BackButton.php.html#19"><abbr title="Webjump\Pet\Block\View\UiComponent\Buttons\BackButton::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HelloWorld/Plugin/ActionPlugin.php.html#35"><abbr title="Webjump\HelloWorld\Plugin\ActionPlugin::afterDispatch">afterDispatch</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HelloWorld/Plugin/ActionPlugin.php.html#27"><abbr title="Webjump\HelloWorld\Plugin\ActionPlugin::aroundDispatch">aroundDispatch</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HelloWorld/Plugin/ActionPlugin.php.html#22"><abbr title="Webjump\HelloWorld\Plugin\ActionPlugin::beforeDispatch">beforeDispatch</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HelloWorld/Observer/CustomObserver.php.html#20"><abbr title="Webjump\HelloWorld\Observer\CustomObserver::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Model/Pet.php.html#37"><abbr title="Webjump\Pet\Model\Pet::getDescription">getDescription</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HelloWorld/Observer/CustomObserver.php.html#15"><abbr title="Webjump\HelloWorld\Observer\CustomObserver::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HelloWorld/Cron/WriteMessage.php.html#18"><abbr title="Webjump\HelloWorld\Cron\WriteMessage::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HelloWorld/Cron/WriteMessage.php.html#13"><abbr title="Webjump\HelloWorld\Cron\WriteMessage::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HelloWorld/Controller/TestController/Index.php.html#21"><abbr title="Webjump\HelloWorld\Controller\TestController\Index::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HelloWorld/Controller/TestController/Index.php.html#15"><abbr title="Webjump\HelloWorld\Controller\TestController\Index::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="HelloWorld/Console/Command/WriteMessageCommand.php.html#31"><abbr title="Webjump\HelloWorld\Console\Command\WriteMessageCommand::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Controller/Adminhtml/Action/Save.php.html#30"><abbr title="Webjump\Pet\Controller\Adminhtml\Action\Save::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Controller/Adminhtml/Action/Save.php.html#48"><abbr title="Webjump\Pet\Controller\Adminhtml\Action\Save::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Controller/Adminhtml/Action/Save.php.html#76"><abbr title="Webjump\Pet\Controller\Adminhtml\Action\Save::goBack">goBack</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Controller/Adminhtml/MassAction/Delete.php.html#55"><abbr title="Webjump\Pet\Controller\Adminhtml\MassAction\Delete::goBack">goBack</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Model/Pet.php.html#32"><abbr title="Webjump\Pet\Model\Pet::setName">setName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Model/Pet.php.html#27"><abbr title="Webjump\Pet\Model\Pet::getName">getName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Model/Pet.php.html#22"><abbr title="Webjump\Pet\Model\Pet::setPetId">setPetId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Model/Pet.php.html#17"><abbr title="Webjump\Pet\Model\Pet::getPetId">getPetId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Model/Pet.php.html#12"><abbr title="Webjump\Pet\Model\Pet::_construct">_construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Model/Data.php.html#32"><abbr title="Webjump\Pet\Model\Data::getGeneralConfig">getGeneralConfig</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Controller/Adminhtml/MassAction/Delete.php.html#40"><abbr title="Webjump\Pet\Controller\Adminhtml\MassAction\Delete::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Controller/Adminhtml/InlineAction/Edit.php.html#26"><abbr title="Webjump\Pet\Controller\Adminhtml\InlineAction\Edit::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Controller/Adminhtml/MassAction/Delete.php.html#24"><abbr title="Webjump\Pet\Controller\Adminhtml\MassAction\Delete::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Controller/Adminhtml/Item/Index.php.html#34"><abbr title="Webjump\Pet\Controller\Adminhtml\Item\Index::_isAllowed">_isAllowed</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Controller/Adminhtml/Item/Edit.php.html#28"><abbr title="Webjump\Pet\Controller\Adminhtml\Item\Edit::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Controller/Adminhtml/Item/Create.php.html#29"><abbr title="Webjump\Pet\Controller\Adminhtml\Item\Create::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Controller/Adminhtml/InlineAction/Edit.php.html#41"><abbr title="Webjump\Pet\Controller\Adminhtml\InlineAction\Edit::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RouterExample/Controller/RouterController/Index.php.html#21"><abbr title="Webjump\RouterExample\Controller\RouterController\Index::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Pet/Model/ResourceModel/GetAllPetTypeOptions.php.html#28"><abbr title="Webjump\Pet\Model\ResourceModel\GetAllPetTypeOptions::execute">execute</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="PetGraphQl/Test/Unit/Model/Resolver/UpdatePetTest.php.html#54"><abbr title="Webjump\PetGraphQl\Test\Unit\Model\Resolver\UpdatePetTest::testResolveWillThrowGraphQlInputException">testResolveWillThrowGraphQlInputException</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="PetGraphQl/Test/Unit/Model/Resolver/CreatePetTest.php.html#62"><abbr title="Webjump\PetGraphQl\Test\Unit\Model\Resolver\CreatePetTest::testResolveWillThrowGraphQlInputException">testResolveWillThrowGraphQlInputException</abbr></a></td><td class="text-right">85%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Pet/Controller/Adminhtml/Action/Save.php.html#48"><abbr title="Webjump\Pet\Controller\Adminhtml\Action\Save::execute">execute</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Pet/Controller/Adminhtml/InlineAction/Edit.php.html#41"><abbr title="Webjump\Pet\Controller\Adminhtml\InlineAction\Edit::execute">execute</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Pet/Controller/Adminhtml/MassAction/Delete.php.html#40"><abbr title="Webjump\Pet\Controller\Adminhtml\MassAction\Delete::execute">execute</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Endpoint/Model/Hello.php.html#11"><abbr title="Webjump\Endpoint\Model\Hello::name">name</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="HelloWorld/Console/Command/WriteMessageCommand.php.html#31"><abbr title="Webjump\HelloWorld\Console\Command\WriteMessageCommand::execute">execute</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Pet/Ui/Component/Data/DataProvider.php.html#30"><abbr title="Webjump\Pet\Ui\Component\Data\DataProvider::getData">getData</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Pet/Model/ResourceModel/GetAllPetTypeOptions.php.html#28"><abbr title="Webjump\Pet\Model\ResourceModel\GetAllPetTypeOptions::execute">execute</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 5.3.2</a> using <a href="https://secure.php.net/" target="_top">PHP 7.2.34-1+ubuntu18.04.1+deb.sury.org+1</a> with <a href="https://xdebug.org/">Xdebug 2.9.6</a> and <a href="https://phpunit.de/">PHPUnit 6.5.14</a> at Thu Oct 22 17:55:19 UTC 2020.</small>
+    </p>
+   </footer>
+  </div>
+  <script src=".js/jquery.min.js" type="text/javascript"></script>
+  <script src=".js/bootstrap.min.js" type="text/javascript"></script>
+  <script src=".js/holder.min.js" type="text/javascript"></script>
+  <script src=".js/d3.min.js" type="text/javascript"></script>
+  <script src=".js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([30,0,0,0,0,0,0,0,0,1,5,12], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([69,0,0,0,0,0,0,0,0,3,4,41], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,2,"<a href=\"Endpoint\/Model\/Hello.php.html#9\">Webjump\\Endpoint\\Model\\Hello<\/a>"],[0,3,"<a href=\"HelloWorld\/Console\/Command\/WriteMessageCommand.php.html#14\">Webjump\\HelloWorld\\Console\\Command\\WriteMessageCommand<\/a>"],[0,2,"<a href=\"HelloWorld\/Controller\/TestController\/Index.php.html#11\">Webjump\\HelloWorld\\Controller\\TestController\\Index<\/a>"],[0,2,"<a href=\"HelloWorld\/Cron\/WriteMessage.php.html#9\">Webjump\\HelloWorld\\Cron\\WriteMessage<\/a>"],[0,2,"<a href=\"HelloWorld\/Observer\/CustomObserver.php.html#11\">Webjump\\HelloWorld\\Observer\\CustomObserver<\/a>"],[0,4,"<a href=\"HelloWorld\/Plugin\/ActionPlugin.php.html#11\">Webjump\\HelloWorld\\Plugin\\ActionPlugin<\/a>"],[0,2,"<a href=\"Pet\/Block\/View\/UiComponent\/Buttons\/BackButton.php.html#10\">Webjump\\Pet\\Block\\View\\UiComponent\\Buttons\\BackButton<\/a>"],[0,1,"<a href=\"Pet\/Block\/View\/UiComponent\/Buttons\/SaveButton.php.html#10\">Webjump\\Pet\\Block\\View\\UiComponent\\Buttons\\SaveButton<\/a>"],[0,6,"<a href=\"Pet\/Controller\/Adminhtml\/Action\/Save.php.html#21\">Webjump\\Pet\\Controller\\Adminhtml\\Action\\Save<\/a>"],[0,4,"<a href=\"Pet\/Controller\/Adminhtml\/InlineAction\/Edit.php.html#19\">Webjump\\Pet\\Controller\\Adminhtml\\InlineAction\\Edit<\/a>"],[0,1,"<a href=\"Pet\/Controller\/Adminhtml\/Item\/Create.php.html#16\">Webjump\\Pet\\Controller\\Adminhtml\\Item\\Create<\/a>"],[0,1,"<a href=\"Pet\/Controller\/Adminhtml\/Item\/Edit.php.html#16\">Webjump\\Pet\\Controller\\Adminhtml\\Item\\Edit<\/a>"],[90,3,"<a href=\"Pet\/Controller\/Adminhtml\/Item\/Index.php.html#10\">Webjump\\Pet\\Controller\\Adminhtml\\Item\\Index<\/a>"],[0,5,"<a href=\"Pet\/Controller\/Adminhtml\/MassAction\/Delete.php.html#18\">Webjump\\Pet\\Controller\\Adminhtml\\MassAction\\Delete<\/a>"],[80,3,"<a href=\"Pet\/Model\/Data.php.html#14\">Webjump\\Pet\\Model\\Data<\/a>"],[0,9,"<a href=\"Pet\/Model\/Pet.php.html#9\">Webjump\\Pet\\Model\\Pet<\/a>"],[0,1,"<a href=\"Pet\/Model\/PetDataProvider.php.html#9\">Webjump\\Pet\\Model\\PetDataProvider<\/a>"],[100,6,"<a href=\"Pet\/Model\/PetRepository.php.html#14\">Webjump\\Pet\\Model\\PetRepository<\/a>"],[0,1,"<a href=\"Pet\/Model\/ResourceModel\/Collection\/PetCollection.php.html#7\">Webjump\\Pet\\Model\\ResourceModel\\Collection\\PetCollection<\/a>"],[90,3,"<a href=\"Pet\/Model\/ResourceModel\/GetAllPetTypeOptions.php.html#14\">Webjump\\Pet\\Model\\ResourceModel\\GetAllPetTypeOptions<\/a>"],[0,1,"<a href=\"Pet\/Model\/ResourceModel\/PetResource.php.html#7\">Webjump\\Pet\\Model\\ResourceModel\\PetResource<\/a>"],[100,5,"<a href=\"Pet\/Model\/Source\/PetTypeSource.php.html#22\">Webjump\\Pet\\Model\\Source\\PetTypeSource<\/a>"],[0,4,"<a href=\"Pet\/Setup\/Patch\/Data\/AddCustomerAttribute.php.html#22\">Webjump\\Pet\\Setup\\Patch\\Data\\AddCustomerAttribute<\/a>"],[0,4,"<a href=\"Pet\/Setup\/Patch\/Data\/AddPet.php.html#10\">Webjump\\Pet\\Setup\\Patch\\Data\\AddPet<\/a>"],[0,4,"<a href=\"Pet\/Setup\/Patch\/Data\/CreatePet.php.html#14\">Webjump\\Pet\\Setup\\Patch\\Data\\CreatePet<\/a>"],[100,2,"<a href=\"Pet\/Test\/Unit\/Controller\/Adminhtml\/Item\/IndexTest.php.html#20\">Webjump\\Pet\\Test\\Unit\\Controller\\Adminhtml\\Item\\IndexTest<\/a>"],[100,3,"<a href=\"Pet\/Test\/Unit\/Model\/DataTest.php.html#18\">Webjump\\Pet\\Test\\Unit\\Model\\DataTest<\/a>"],[97.979797979798,6,"<a href=\"Pet\/Test\/Unit\/Model\/PetRepositoryTest.php.html#22\">Webjump\\Pet\\Test\\Unit\\Model\\PetRepositoryTest<\/a>"],[100,2,"<a href=\"Pet\/Test\/Unit\/Model\/ResourceModel\/GetAllPetTypeOptionsTest.php.html#21\">Webjump\\Pet\\Test\\Unit\\Model\\ResourceModel\\GetAllPetTypeOptionsTest<\/a>"],[100,2,"<a href=\"Pet\/Test\/Unit\/Model\/Source\/PetTypeSourceTest.php.html#13\">Webjump\\Pet\\Test\\Unit\\Model\\Source\\PetTypeSourceTest<\/a>"],[0,3,"<a href=\"Pet\/Ui\/Component\/Data\/DataProvider.php.html#11\">Webjump\\Pet\\Ui\\Component\\Data\\DataProvider<\/a>"],[100,5,"<a href=\"PetGraphQl\/Model\/Resolver\/CreatePet.php.html#22\">Webjump\\PetGraphQl\\Model\\Resolver\\CreatePet<\/a>"],[100,3,"<a href=\"PetGraphQl\/Model\/Resolver\/DeletePet.php.html#20\">Webjump\\PetGraphQl\\Model\\Resolver\\DeletePet<\/a>"],[100,3,"<a href=\"PetGraphQl\/Model\/Resolver\/Pet.php.html#22\">Webjump\\PetGraphQl\\Model\\Resolver\\Pet<\/a>"],[100,5,"<a href=\"PetGraphQl\/Model\/Resolver\/UpdatePet.php.html#21\">Webjump\\PetGraphQl\\Model\\Resolver\\UpdatePet<\/a>"],[96.72131147541,4,"<a href=\"PetGraphQl\/Test\/Unit\/Model\/Resolver\/CreatePetTest.php.html#25\">Webjump\\PetGraphQl\\Test\\Unit\\Model\\Resolver\\CreatePetTest<\/a>"],[100,3,"<a href=\"PetGraphQl\/Test\/Unit\/Model\/Resolver\/DeletePetTest.php.html#15\">Webjump\\PetGraphQl\\Test\\Unit\\Model\\Resolver\\DeletePetTest<\/a>"],[100,2,"<a href=\"PetGraphQl\/Test\/Unit\/Model\/Resolver\/PetTest.php.html#18\">Webjump\\PetGraphQl\\Test\\Unit\\Model\\Resolver\\PetTest<\/a>"],[96.610169491525,4,"<a href=\"PetGraphQl\/Test\/Unit\/Model\/Resolver\/UpdatePetTest.php.html#18\">Webjump\\PetGraphQl\\Test\\Unit\\Model\\Resolver\\UpdatePetTest<\/a>"],[0,1,"<a href=\"RouterExample\/Block\/Hello.php.html#9\">Webjump\\RouterExample\\Block\\Hello<\/a>"],[0,1,"<a href=\"RouterExample\/Controller\/ForwardController\/Index.php.html#13\">Webjump\\RouterExample\\Controller\\ForwardController\\Index<\/a>"],[0,2,"<a href=\"RouterExample\/Controller\/Index\/Sendemail.php.html#19\">Webjump\\RouterExample\\Controller\\Index\\Sendemail<\/a>"],[0,2,"<a href=\"RouterExample\/Controller\/JsonController\/Index.php.html#11\">Webjump\\RouterExample\\Controller\\JsonController\\Index<\/a>"],[0,2,"<a href=\"RouterExample\/Controller\/PageController\/Index.php.html#11\">Webjump\\RouterExample\\Controller\\PageController\\Index<\/a>"],[0,2,"<a href=\"RouterExample\/Controller\/PetController\/Index.php.html#12\">Webjump\\RouterExample\\Controller\\PetController\\Index<\/a>"],[0,1,"<a href=\"RouterExample\/Controller\/RawController\/Index.php.html#11\">Webjump\\RouterExample\\Controller\\RawController\\Index<\/a>"],[0,2,"<a href=\"RouterExample\/Controller\/RedirectController\/Index.php.html#11\">Webjump\\RouterExample\\Controller\\RedirectController\\Index<\/a>"],[0,2,"<a href=\"RouterExample\/Controller\/RouterController\/Index.php.html#11\">Webjump\\RouterExample\\Controller\\RouterController\\Index<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,2,"<a href=\"Endpoint\/Model\/Hello.php.html#11\">Webjump\\Endpoint\\Model\\Hello::name<\/a>"],[0,1,"<a href=\"HelloWorld\/Console\/Command\/WriteMessageCommand.php.html#18\">Webjump\\HelloWorld\\Console\\Command\\WriteMessageCommand::configure<\/a>"],[0,2,"<a href=\"HelloWorld\/Console\/Command\/WriteMessageCommand.php.html#31\">Webjump\\HelloWorld\\Console\\Command\\WriteMessageCommand::execute<\/a>"],[0,1,"<a href=\"HelloWorld\/Controller\/TestController\/Index.php.html#15\">Webjump\\HelloWorld\\Controller\\TestController\\Index::__construct<\/a>"],[0,1,"<a href=\"HelloWorld\/Controller\/TestController\/Index.php.html#21\">Webjump\\HelloWorld\\Controller\\TestController\\Index::execute<\/a>"],[0,1,"<a href=\"HelloWorld\/Cron\/WriteMessage.php.html#13\">Webjump\\HelloWorld\\Cron\\WriteMessage::__construct<\/a>"],[0,1,"<a href=\"HelloWorld\/Cron\/WriteMessage.php.html#18\">Webjump\\HelloWorld\\Cron\\WriteMessage::execute<\/a>"],[0,1,"<a href=\"HelloWorld\/Observer\/CustomObserver.php.html#15\">Webjump\\HelloWorld\\Observer\\CustomObserver::__construct<\/a>"],[0,1,"<a href=\"HelloWorld\/Observer\/CustomObserver.php.html#20\">Webjump\\HelloWorld\\Observer\\CustomObserver::execute<\/a>"],[0,1,"<a href=\"HelloWorld\/Plugin\/ActionPlugin.php.html#16\">Webjump\\HelloWorld\\Plugin\\ActionPlugin::__construct<\/a>"],[0,1,"<a href=\"HelloWorld\/Plugin\/ActionPlugin.php.html#22\">Webjump\\HelloWorld\\Plugin\\ActionPlugin::beforeDispatch<\/a>"],[0,1,"<a href=\"HelloWorld\/Plugin\/ActionPlugin.php.html#27\">Webjump\\HelloWorld\\Plugin\\ActionPlugin::aroundDispatch<\/a>"],[0,1,"<a href=\"HelloWorld\/Plugin\/ActionPlugin.php.html#35\">Webjump\\HelloWorld\\Plugin\\ActionPlugin::afterDispatch<\/a>"],[0,1,"<a href=\"Pet\/Block\/View\/UiComponent\/Buttons\/BackButton.php.html#19\">Webjump\\Pet\\Block\\View\\UiComponent\\Buttons\\BackButton::__construct<\/a>"],[0,1,"<a href=\"Pet\/Block\/View\/UiComponent\/Buttons\/BackButton.php.html#28\">Webjump\\Pet\\Block\\View\\UiComponent\\Buttons\\BackButton::getButtonData<\/a>"],[0,1,"<a href=\"Pet\/Block\/View\/UiComponent\/Buttons\/SaveButton.php.html#17\">Webjump\\Pet\\Block\\View\\UiComponent\\Buttons\\SaveButton::getButtonData<\/a>"],[0,1,"<a href=\"Pet\/Controller\/Adminhtml\/Action\/Save.php.html#30\">Webjump\\Pet\\Controller\\Adminhtml\\Action\\Save::__construct<\/a>"],[0,4,"<a href=\"Pet\/Controller\/Adminhtml\/Action\/Save.php.html#48\">Webjump\\Pet\\Controller\\Adminhtml\\Action\\Save::execute<\/a>"],[0,1,"<a href=\"Pet\/Controller\/Adminhtml\/Action\/Save.php.html#76\">Webjump\\Pet\\Controller\\Adminhtml\\Action\\Save::goBack<\/a>"],[0,1,"<a href=\"Pet\/Controller\/Adminhtml\/InlineAction\/Edit.php.html#26\">Webjump\\Pet\\Controller\\Adminhtml\\InlineAction\\Edit::__construct<\/a>"],[0,3,"<a href=\"Pet\/Controller\/Adminhtml\/InlineAction\/Edit.php.html#41\">Webjump\\Pet\\Controller\\Adminhtml\\InlineAction\\Edit::execute<\/a>"],[0,1,"<a href=\"Pet\/Controller\/Adminhtml\/Item\/Create.php.html#29\">Webjump\\Pet\\Controller\\Adminhtml\\Item\\Create::execute<\/a>"],[0,1,"<a href=\"Pet\/Controller\/Adminhtml\/Item\/Edit.php.html#28\">Webjump\\Pet\\Controller\\Adminhtml\\Item\\Edit::execute<\/a>"],[100,1,"<a href=\"Pet\/Controller\/Adminhtml\/Item\/Index.php.html#16\">Webjump\\Pet\\Controller\\Adminhtml\\Item\\Index::__construct<\/a>"],[100,1,"<a href=\"Pet\/Controller\/Adminhtml\/Item\/Index.php.html#22\">Webjump\\Pet\\Controller\\Adminhtml\\Item\\Index::execute<\/a>"],[0,1,"<a href=\"Pet\/Controller\/Adminhtml\/Item\/Index.php.html#34\">Webjump\\Pet\\Controller\\Adminhtml\\Item\\Index::_isAllowed<\/a>"],[0,1,"<a href=\"Pet\/Controller\/Adminhtml\/MassAction\/Delete.php.html#24\">Webjump\\Pet\\Controller\\Adminhtml\\MassAction\\Delete::__construct<\/a>"],[0,3,"<a href=\"Pet\/Controller\/Adminhtml\/MassAction\/Delete.php.html#40\">Webjump\\Pet\\Controller\\Adminhtml\\MassAction\\Delete::execute<\/a>"],[0,1,"<a href=\"Pet\/Controller\/Adminhtml\/MassAction\/Delete.php.html#55\">Webjump\\Pet\\Controller\\Adminhtml\\MassAction\\Delete::goBack<\/a>"],[100,1,"<a href=\"Pet\/Model\/Data.php.html#20\">Webjump\\Pet\\Model\\Data::__construct<\/a>"],[100,1,"<a href=\"Pet\/Model\/Data.php.html#25\">Webjump\\Pet\\Model\\Data::getConfigValue<\/a>"],[0,1,"<a href=\"Pet\/Model\/Data.php.html#32\">Webjump\\Pet\\Model\\Data::getGeneralConfig<\/a>"],[0,1,"<a href=\"Pet\/Model\/Pet.php.html#12\">Webjump\\Pet\\Model\\Pet::_construct<\/a>"],[0,1,"<a href=\"Pet\/Model\/Pet.php.html#17\">Webjump\\Pet\\Model\\Pet::getPetId<\/a>"],[0,1,"<a href=\"Pet\/Model\/Pet.php.html#22\">Webjump\\Pet\\Model\\Pet::setPetId<\/a>"],[0,1,"<a href=\"Pet\/Model\/Pet.php.html#27\">Webjump\\Pet\\Model\\Pet::getName<\/a>"],[0,1,"<a href=\"Pet\/Model\/Pet.php.html#32\">Webjump\\Pet\\Model\\Pet::setName<\/a>"],[0,1,"<a href=\"Pet\/Model\/Pet.php.html#37\">Webjump\\Pet\\Model\\Pet::getDescription<\/a>"],[0,1,"<a href=\"Pet\/Model\/Pet.php.html#42\">Webjump\\Pet\\Model\\Pet::setDescription<\/a>"],[0,1,"<a href=\"Pet\/Model\/Pet.php.html#47\">Webjump\\Pet\\Model\\Pet::getCreatedAt<\/a>"],[0,1,"<a href=\"Pet\/Model\/Pet.php.html#52\">Webjump\\Pet\\Model\\Pet::setCreatedAt<\/a>"],[0,1,"<a href=\"Pet\/Model\/PetDataProvider.php.html#16\">Webjump\\Pet\\Model\\PetDataProvider::getData<\/a>"],[100,1,"<a href=\"Pet\/Model\/PetRepository.php.html#21\">Webjump\\Pet\\Model\\PetRepository::__construct<\/a>"],[100,2,"<a href=\"Pet\/Model\/PetRepository.php.html#31\">Webjump\\Pet\\Model\\PetRepository::getById<\/a>"],[100,1,"<a href=\"Pet\/Model\/PetRepository.php.html#43\">Webjump\\Pet\\Model\\PetRepository::save<\/a>"],[100,2,"<a href=\"Pet\/Model\/PetRepository.php.html#55\">Webjump\\Pet\\Model\\PetRepository::deleteById<\/a>"],[0,1,"<a href=\"Pet\/Model\/ResourceModel\/Collection\/PetCollection.php.html#9\">Webjump\\Pet\\Model\\ResourceModel\\Collection\\PetCollection::_construct<\/a>"],[100,1,"<a href=\"Pet\/Model\/ResourceModel\/GetAllPetTypeOptions.php.html#19\">Webjump\\Pet\\Model\\ResourceModel\\GetAllPetTypeOptions::__construct<\/a>"],[85.714285714286,2,"<a href=\"Pet\/Model\/ResourceModel\/GetAllPetTypeOptions.php.html#28\">Webjump\\Pet\\Model\\ResourceModel\\GetAllPetTypeOptions::execute<\/a>"],[0,1,"<a href=\"Pet\/Model\/ResourceModel\/PetResource.php.html#10\">Webjump\\Pet\\Model\\ResourceModel\\PetResource::_construct<\/a>"],[100,1,"<a href=\"Pet\/Model\/Source\/PetTypeSource.php.html#28\">Webjump\\Pet\\Model\\Source\\PetTypeSource::__construct<\/a>"],[100,4,"<a href=\"Pet\/Model\/Source\/PetTypeSource.php.html#39\">Webjump\\Pet\\Model\\Source\\PetTypeSource::getAllOptions<\/a>"],[0,1,"<a href=\"Pet\/Setup\/Patch\/Data\/AddCustomerAttribute.php.html#38\">Webjump\\Pet\\Setup\\Patch\\Data\\AddCustomerAttribute::__construct<\/a>"],[0,1,"<a href=\"Pet\/Setup\/Patch\/Data\/AddCustomerAttribute.php.html#48\">Webjump\\Pet\\Setup\\Patch\\Data\\AddCustomerAttribute::apply<\/a>"],[0,1,"<a href=\"Pet\/Setup\/Patch\/Data\/AddCustomerAttribute.php.html#74\">Webjump\\Pet\\Setup\\Patch\\Data\\AddCustomerAttribute::getDependencies<\/a>"],[0,1,"<a href=\"Pet\/Setup\/Patch\/Data\/AddCustomerAttribute.php.html#79\">Webjump\\Pet\\Setup\\Patch\\Data\\AddCustomerAttribute::getAliases<\/a>"],[0,1,"<a href=\"Pet\/Setup\/Patch\/Data\/AddPet.php.html#15\">Webjump\\Pet\\Setup\\Patch\\Data\\AddPet::__construct<\/a>"],[0,1,"<a href=\"Pet\/Setup\/Patch\/Data\/AddPet.php.html#20\">Webjump\\Pet\\Setup\\Patch\\Data\\AddPet::apply<\/a>"],[0,1,"<a href=\"Pet\/Setup\/Patch\/Data\/AddPet.php.html#55\">Webjump\\Pet\\Setup\\Patch\\Data\\AddPet::getDependencies<\/a>"],[0,1,"<a href=\"Pet\/Setup\/Patch\/Data\/AddPet.php.html#60\">Webjump\\Pet\\Setup\\Patch\\Data\\AddPet::getAliases<\/a>"],[0,1,"<a href=\"Pet\/Setup\/Patch\/Data\/CreatePet.php.html#20\">Webjump\\Pet\\Setup\\Patch\\Data\\CreatePet::__construct<\/a>"],[0,1,"<a href=\"Pet\/Setup\/Patch\/Data\/CreatePet.php.html#30\">Webjump\\Pet\\Setup\\Patch\\Data\\CreatePet::getDependencies<\/a>"],[0,1,"<a href=\"Pet\/Setup\/Patch\/Data\/CreatePet.php.html#35\">Webjump\\Pet\\Setup\\Patch\\Data\\CreatePet::getAliases<\/a>"],[0,1,"<a href=\"Pet\/Setup\/Patch\/Data\/CreatePet.php.html#40\">Webjump\\Pet\\Setup\\Patch\\Data\\CreatePet::apply<\/a>"],[100,1,"<a href=\"Pet\/Test\/Unit\/Controller\/Adminhtml\/Item\/IndexTest.php.html#28\">Webjump\\Pet\\Test\\Unit\\Controller\\Adminhtml\\Item\\IndexTest::setup<\/a>"],[100,1,"<a href=\"Pet\/Test\/Unit\/Controller\/Adminhtml\/Item\/IndexTest.php.html#50\">Webjump\\Pet\\Test\\Unit\\Controller\\Adminhtml\\Item\\IndexTest::testExecute<\/a>"],[100,1,"<a href=\"Pet\/Test\/Unit\/Model\/DataTest.php.html#25\">Webjump\\Pet\\Test\\Unit\\Model\\DataTest::setup<\/a>"],[100,1,"<a href=\"Pet\/Test\/Unit\/Model\/DataTest.php.html#38\">Webjump\\Pet\\Test\\Unit\\Model\\DataTest::testGetConfigValue<\/a>"],[100,1,"<a href=\"Pet\/Test\/Unit\/Model\/DataTest.php.html#54\">Webjump\\Pet\\Test\\Unit\\Model\\DataTest::testGetGeneralConfig<\/a>"],[100,1,"<a href=\"Pet\/Test\/Unit\/Model\/PetRepositoryTest.php.html#33\">Webjump\\Pet\\Test\\Unit\\Model\\PetRepositoryTest::setup<\/a>"],[100,1,"<a href=\"Pet\/Test\/Unit\/Model\/PetRepositoryTest.php.html#59\">Webjump\\Pet\\Test\\Unit\\Model\\PetRepositoryTest::testGetById<\/a>"],[93.75,1,"<a href=\"Pet\/Test\/Unit\/Model\/PetRepositoryTest.php.html#90\">Webjump\\Pet\\Test\\Unit\\Model\\PetRepositoryTest::testGetByIdWillThrowNoSuchException<\/a>"],[100,1,"<a href=\"Pet\/Test\/Unit\/Model\/PetRepositoryTest.php.html#117\">Webjump\\Pet\\Test\\Unit\\Model\\PetRepositoryTest::testSave<\/a>"],[100,1,"<a href=\"Pet\/Test\/Unit\/Model\/PetRepositoryTest.php.html#138\">Webjump\\Pet\\Test\\Unit\\Model\\PetRepositoryTest::testDeleteById<\/a>"],[93.75,1,"<a href=\"Pet\/Test\/Unit\/Model\/PetRepositoryTest.php.html#174\">Webjump\\Pet\\Test\\Unit\\Model\\PetRepositoryTest::testDeleteByIdWillThrowNoSuchException<\/a>"],[100,1,"<a href=\"Pet\/Test\/Unit\/Model\/ResourceModel\/GetAllPetTypeOptionsTest.php.html#33\">Webjump\\Pet\\Test\\Unit\\Model\\ResourceModel\\GetAllPetTypeOptionsTest::setup<\/a>"],[100,1,"<a href=\"Pet\/Test\/Unit\/Model\/ResourceModel\/GetAllPetTypeOptionsTest.php.html#54\">Webjump\\Pet\\Test\\Unit\\Model\\ResourceModel\\GetAllPetTypeOptionsTest::testExecute<\/a>"],[100,1,"<a href=\"Pet\/Test\/Unit\/Model\/Source\/PetTypeSourceTest.php.html#20\">Webjump\\Pet\\Test\\Unit\\Model\\Source\\PetTypeSourceTest::setup<\/a>"],[100,1,"<a href=\"Pet\/Test\/Unit\/Model\/Source\/PetTypeSourceTest.php.html#35\">Webjump\\Pet\\Test\\Unit\\Model\\Source\\PetTypeSourceTest::testGetAllOptions<\/a>"],[0,1,"<a href=\"Pet\/Ui\/Component\/Data\/DataProvider.php.html#14\">Webjump\\Pet\\Ui\\Component\\Data\\DataProvider::__construct<\/a>"],[0,2,"<a href=\"Pet\/Ui\/Component\/Data\/DataProvider.php.html#30\">Webjump\\Pet\\Ui\\Component\\Data\\DataProvider::getData<\/a>"],[100,1,"<a href=\"PetGraphQl\/Model\/Resolver\/CreatePet.php.html#27\">Webjump\\PetGraphQl\\Model\\Resolver\\CreatePet::__construct<\/a>"],[100,4,"<a href=\"PetGraphQl\/Model\/Resolver\/CreatePet.php.html#43\">Webjump\\PetGraphQl\\Model\\Resolver\\CreatePet::resolve<\/a>"],[100,1,"<a href=\"PetGraphQl\/Model\/Resolver\/DeletePet.php.html#24\">Webjump\\PetGraphQl\\Model\\Resolver\\DeletePet::__construct<\/a>"],[100,2,"<a href=\"PetGraphQl\/Model\/Resolver\/DeletePet.php.html#40\">Webjump\\PetGraphQl\\Model\\Resolver\\DeletePet::resolve<\/a>"],[100,1,"<a href=\"PetGraphQl\/Model\/Resolver\/Pet.php.html#27\">Webjump\\PetGraphQl\\Model\\Resolver\\Pet::__construct<\/a>"],[100,2,"<a href=\"PetGraphQl\/Model\/Resolver\/Pet.php.html#41\">Webjump\\PetGraphQl\\Model\\Resolver\\Pet::resolve<\/a>"],[100,1,"<a href=\"PetGraphQl\/Model\/Resolver\/UpdatePet.php.html#25\">Webjump\\PetGraphQl\\Model\\Resolver\\UpdatePet::__construct<\/a>"],[100,4,"<a href=\"PetGraphQl\/Model\/Resolver\/UpdatePet.php.html#40\">Webjump\\PetGraphQl\\Model\\Resolver\\UpdatePet::resolve<\/a>"],[100,1,"<a href=\"PetGraphQl\/Test\/Unit\/Model\/Resolver\/CreatePetTest.php.html#38\">Webjump\\PetGraphQl\\Test\\Unit\\Model\\Resolver\\CreatePetTest::setup<\/a>"],[85.714285714286,1,"<a href=\"PetGraphQl\/Test\/Unit\/Model\/Resolver\/CreatePetTest.php.html#62\">Webjump\\PetGraphQl\\Test\\Unit\\Model\\Resolver\\CreatePetTest::testResolveWillThrowGraphQlInputException<\/a>"],[90.909090909091,1,"<a href=\"PetGraphQl\/Test\/Unit\/Model\/Resolver\/CreatePetTest.php.html#76\">Webjump\\PetGraphQl\\Test\\Unit\\Model\\Resolver\\CreatePetTest::testResolveWillThrowGraphQlInputExceptionBecauseNameIsMissing<\/a>"],[100,1,"<a href=\"PetGraphQl\/Test\/Unit\/Model\/Resolver\/CreatePetTest.php.html#95\">Webjump\\PetGraphQl\\Test\\Unit\\Model\\Resolver\\CreatePetTest::testResolve<\/a>"],[100,1,"<a href=\"PetGraphQl\/Test\/Unit\/Model\/Resolver\/DeletePetTest.php.html#25\">Webjump\\PetGraphQl\\Test\\Unit\\Model\\Resolver\\DeletePetTest::setup<\/a>"],[100,1,"<a href=\"PetGraphQl\/Test\/Unit\/Model\/Resolver\/DeletePetTest.php.html#44\">Webjump\\PetGraphQl\\Test\\Unit\\Model\\Resolver\\DeletePetTest::testResolve<\/a>"],[100,1,"<a href=\"PetGraphQl\/Test\/Unit\/Model\/Resolver\/DeletePetTest.php.html#70\">Webjump\\PetGraphQl\\Test\\Unit\\Model\\Resolver\\DeletePetTest::testResolveWithInvalidId<\/a>"],[100,1,"<a href=\"PetGraphQl\/Test\/Unit\/Model\/Resolver\/PetTest.php.html#32\">Webjump\\PetGraphQl\\Test\\Unit\\Model\\Resolver\\PetTest::setup<\/a>"],[100,1,"<a href=\"PetGraphQl\/Test\/Unit\/Model\/Resolver\/PetTest.php.html#62\">Webjump\\PetGraphQl\\Test\\Unit\\Model\\Resolver\\PetTest::testResolve<\/a>"],[100,1,"<a href=\"PetGraphQl\/Test\/Unit\/Model\/Resolver\/UpdatePetTest.php.html#29\">Webjump\\PetGraphQl\\Test\\Unit\\Model\\Resolver\\UpdatePetTest::setup<\/a>"],[85.714285714286,1,"<a href=\"PetGraphQl\/Test\/Unit\/Model\/Resolver\/UpdatePetTest.php.html#54\">Webjump\\PetGraphQl\\Test\\Unit\\Model\\Resolver\\UpdatePetTest::testResolveWillThrowGraphQlInputException<\/a>"],[90.909090909091,1,"<a href=\"PetGraphQl\/Test\/Unit\/Model\/Resolver\/UpdatePetTest.php.html#68\">Webjump\\PetGraphQl\\Test\\Unit\\Model\\Resolver\\UpdatePetTest::testResolveWillThrowGraphQlInputExceptionBecauseIdIsMissing<\/a>"],[100,1,"<a href=\"PetGraphQl\/Test\/Unit\/Model\/Resolver\/UpdatePetTest.php.html#87\">Webjump\\PetGraphQl\\Test\\Unit\\Model\\Resolver\\UpdatePetTest::testResolve<\/a>"],[0,1,"<a href=\"RouterExample\/Block\/Hello.php.html#11\">Webjump\\RouterExample\\Block\\Hello::getHello<\/a>"],[0,1,"<a href=\"RouterExample\/Controller\/ForwardController\/Index.php.html#15\">Webjump\\RouterExample\\Controller\\ForwardController\\Index::execute<\/a>"],[0,1,"<a href=\"RouterExample\/Controller\/Index\/Sendemail.php.html#34\">Webjump\\RouterExample\\Controller\\Index\\Sendemail::__construct<\/a>"],[0,1,"<a href=\"RouterExample\/Controller\/Index\/Sendemail.php.html#47\">Webjump\\RouterExample\\Controller\\Index\\Sendemail::execute<\/a>"],[0,1,"<a href=\"RouterExample\/Controller\/JsonController\/Index.php.html#15\">Webjump\\RouterExample\\Controller\\JsonController\\Index::__construct<\/a>"],[0,1,"<a href=\"RouterExample\/Controller\/JsonController\/Index.php.html#21\">Webjump\\RouterExample\\Controller\\JsonController\\Index::execute<\/a>"],[0,1,"<a href=\"RouterExample\/Controller\/PageController\/Index.php.html#15\">Webjump\\RouterExample\\Controller\\PageController\\Index::__construct<\/a>"],[0,1,"<a href=\"RouterExample\/Controller\/PageController\/Index.php.html#21\">Webjump\\RouterExample\\Controller\\PageController\\Index::execute<\/a>"],[0,1,"<a href=\"RouterExample\/Controller\/PetController\/Index.php.html#18\">Webjump\\RouterExample\\Controller\\PetController\\Index::__construct<\/a>"],[0,1,"<a href=\"RouterExample\/Controller\/PetController\/Index.php.html#28\">Webjump\\RouterExample\\Controller\\PetController\\Index::execute<\/a>"],[0,1,"<a href=\"RouterExample\/Controller\/RawController\/Index.php.html#13\">Webjump\\RouterExample\\Controller\\RawController\\Index::execute<\/a>"],[0,1,"<a href=\"RouterExample\/Controller\/RedirectController\/Index.php.html#16\">Webjump\\RouterExample\\Controller\\RedirectController\\Index::__construct<\/a>"],[0,1,"<a href=\"RouterExample\/Controller\/RedirectController\/Index.php.html#22\">Webjump\\RouterExample\\Controller\\RedirectController\\Index::execute<\/a>"],[0,1,"<a href=\"RouterExample\/Controller\/RouterController\/Index.php.html#15\">Webjump\\RouterExample\\Controller\\RouterController\\Index::__construct<\/a>"],[0,1,"<a href=\"RouterExample\/Controller\/RouterController\/Index.php.html#21\">Webjump\\RouterExample\\Controller\\RouterController\\Index::execute<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

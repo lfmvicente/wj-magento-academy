@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alr:test-suite xmlns:alr="urn:model.allure.qatools.yandex.ru" start="1603389319817" stop="1603389319828" version="1.4.0">
+  <name>Webjump\PetGraphQl\Test\Unit\Model\Resolver\DeletePetTest</name>
+  <test-cases>
+    <test-case start="1603389319817" stop="1603389319823" status="passed">
+      <name>testResolve</name>
+    </test-case>
+    <test-case start="1603389319823" stop="1603389319828" status="passed">
+      <name>testResolveWithInvalidId</name>
+    </test-case>
+  </test-cases>
+</alr:test-suite>

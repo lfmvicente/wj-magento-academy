@@ -23,7 +23,6 @@ class Save extends Action implements HttpPostActionInterface
 
     private $petFactory;
     private $petRepository;
-    private $logger;
 
     const ADMIN_RESOURCE = 'Webjump_Pet::pet_create';
 

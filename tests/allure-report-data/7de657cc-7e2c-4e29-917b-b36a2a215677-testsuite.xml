@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alr:test-suite xmlns:alr="urn:model.allure.qatools.yandex.ru" start="1603389319862" stop="1603389319883" version="1.4.0">
+  <name>Webjump\PetGraphQl\Test\Unit\Model\Resolver\UpdatePetTest</name>
+  <test-cases>
+    <test-case start="1603389319862" stop="1603389319871" status="passed">
+      <name>testResolveWillThrowGraphQlInputException</name>
+    </test-case>
+    <test-case start="1603389319871" stop="1603389319875" status="passed">
+      <name>testResolveWillThrowGraphQlInputExceptionBecauseIdIsMissing</name>
+    </test-case>
+    <test-case start="1603389319876" stop="1603389319883" status="passed">
+      <name>testResolve</name>
+    </test-case>
+  </test-cases>
+</alr:test-suite>

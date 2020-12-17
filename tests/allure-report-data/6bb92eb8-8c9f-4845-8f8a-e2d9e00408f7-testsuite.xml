@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alr:test-suite xmlns:alr="urn:model.allure.qatools.yandex.ru" start="1603389319574" stop="1603389319593" version="1.4.0">
+  <name>Webjump\Pet\Test\Unit\Model\DataTest</name>
+  <test-cases>
+    <test-case start="1603389319574" stop="1603389319589" status="passed">
+      <name>testGetConfigValue</name>
+    </test-case>
+    <test-case start="1603389319589" stop="1603389319593" status="passed">
+      <name>testGetGeneralConfig</name>
+    </test-case>
+  </test-cases>
+</alr:test-suite>
